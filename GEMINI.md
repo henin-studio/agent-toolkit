@@ -8,6 +8,7 @@
 - **accessibility**: Accessibility specialist focused on WCAG 2.1 compliance, assistive technology compatibility, and inclusive design
 - **architect**: Strategic architecture advisor for system design decisions, scalability, and technical trade-offs. Read-only analysis with ADR support.
 - **brainstorming**: Design-first exploration before implementation. Explores user intent, requirements, and design through collaborative dialogue before any code is written.
+- **browser-automator**: AI-driven browser automation agent using browser-use. Navigates, scrapes, fills forms, tests web apps, and extracts data autonomously with domain restriction and sensitive data handling.
 - **build-error-resolver**: Build and TypeScript error resolution specialist. Fixes build/type errors with minimal diffs. No architectural changes. Gets the build green quickly.
 - **code-reviewer**: Expert code review with severity-rated feedback, logic defect detection, SOLID checks, and security focus. Use after writing or modifying code.
 - **database-reviewer**: Database/SQL review specialist for query optimization, schema design, security, and performance. Covers PostgreSQL patterns, migrations, and RLS.
@@ -34,17 +35,19 @@
 ## Skills
 
 - **agent-eval**: Use when comparing AI agents or coding tools against each other, measuring pass rates, cost, and consistency across standardized tasks. (ECC)
+- **ai-coding-agents**: Use when choosing, configuring, or integrating AI coding agents (Aider, Cline, Continue, OpenHands, Roo Code, Plandex, Goose, Tabby, Void, SWE-agent, or alternatives like free-claude-code). Covers terminal agents, IDE extensions, autonomous agents, and self-hosted solutions. (ai-hub)
 - **api-design**: Use when designing new REST APIs, creating endpoints, or defining response formats and pagination strategies. (ECC)
 - **architecture-decision-records**: Use when making significant architectural choices, selecting technologies, or designing system boundaries that affect future development. (ECC)
 - **backend-patterns**: Use when building Node.js APIs, managing database queries, implementing caching, or handling errors in backend services. (ECC)
 - **brainstorming**: Use before any creative work — creating features, building components, adding functionality, or modifying behavior. Explores user intent, requirements, and design before implementation. (superpowers)
+- **browser-use**: Use when automating web browsers with AI agents — scraping, form filling, testing, data extraction, multi-step web workflows, or any task requiring browser interaction via browser-use (Python). (browser-use)
 - **codebase-onboarding**: Use when starting work on an unfamiliar codebase, joining a new project, or creating onboarding documentation. (ECC)
 - **context-budget**: Use when context window is getting full, when agents or skills are consuming too many tokens, or when auditing the efficiency of your Claude Code configuration. (ECC)
 - **continuous-learning-v2**: Use when you notice patterns in your work that should be captured as project-level or global instincts. Observes corrections, patterns, and preferences to build a self-improving knowledge base. (ECC)
 - **executing-plans**: Use when you have a written implementation plan to execute with review checkpoints. (superpowers)
 - **finishing-a-development-branch**: Use when implementation is complete and all tests pass. Guides merge, PR, or cleanup decisions. (superpowers)
 - **frontend-a11y**: Use when building interactive UI components, forms, or navigation to ensure keyboard accessibility, screen reader support, and ARIA compliance. (ECC)
-- **frontend-design-direction**: Establish UI/UX design direction for a project — colors, typography, spacing, and component patterns (curated)
+- **frontend-design-direction**: Use when starting a new UI project, page, or component that needs visual direction before implementation. Establishes design purpose, audience, tone, and constraints. (ECC)
 - **frontend-patterns**: Use when building React/Next.js components, managing state, handling forms, or optimizing frontend performance. (ECC)
 - **react-patterns**: Best practices and patterns for React 19 and Next.js 15+ development (ECC)
 - **react-performance**: Use when optimizing React rendering, reducing bundle size, improving data fetching, or diagnosing slow React applications. (ECC)

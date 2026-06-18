@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "generatedAt": "2026-06-18T12:11:54.083Z",
+  "generatedAt": "2026-06-18T22:21:00.702Z",
   "agents": [
     {
       "name": "accessibility",
@@ -42,6 +42,22 @@
       "effort": "high",
       "file": ".claude/agents/brainstorming.md",
       "category": "methodology"
+    },
+    {
+      "name": "browser-automator",
+      "description": "AI-driven browser automation agent using browser-use. Navigates, scrapes, fills forms, tests web apps, and extracts data autonomously with domain restriction and sensitive data handling.",
+      "tools": [
+        "Read",
+        "Write",
+        "Edit",
+        "Bash",
+        "Grep",
+        "Glob"
+      ],
+      "model": "sonnet",
+      "effort": "high",
+      "file": ".claude/agents/browser-automator.md",
+      "category": "other"
     },
     {
       "name": "build-error-resolver",
@@ -381,6 +397,13 @@
       "category": "meta"
     },
     {
+      "name": "ai-coding-agents",
+      "description": "Use when choosing, configuring, or integrating AI coding agents (Aider, Cline, Continue, OpenHands, Roo Code, Plandex, Goose, Tabby, Void, SWE-agent, or alternatives like free-claude-code). Covers terminal agents, IDE extensions, autonomous agents, and self-hosted solutions.",
+      "origin": "ai-hub",
+      "file": ".claude/skills/ai-coding-agents/SKILL.md",
+      "category": "other"
+    },
+    {
       "name": "api-design",
       "description": "Use when designing new REST APIs, creating endpoints, or defining response formats and pagination strategies.",
       "origin": "ECC",
@@ -407,6 +430,13 @@
       "origin": "superpowers",
       "file": ".claude/skills/brainstorming/SKILL.md",
       "category": "methodology"
+    },
+    {
+      "name": "browser-use",
+      "description": "Use when automating web browsers with AI agents — scraping, form filling, testing, data extraction, multi-step web workflows, or any task requiring browser interaction via browser-use (Python).",
+      "origin": "browser-use",
+      "file": ".claude/skills/browser-use/SKILL.md",
+      "category": "other"
     },
     {
       "name": "codebase-onboarding",
@@ -452,8 +482,8 @@
     },
     {
       "name": "frontend-design-direction",
-      "description": "Establish UI/UX design direction for a project — colors, typography, spacing, and component patterns",
-      "origin": "curated",
+      "description": "Use when starting a new UI project, page, or component that needs visual direction before implementation. Establishes design purpose, audience, tone, and constraints.",
+      "origin": "ECC",
       "file": ".claude/skills/frontend-design-direction/SKILL.md",
       "category": "web"
     },
@@ -628,19 +658,21 @@
     }
   ],
   "stats": {
-    "totalAgents": 25,
-    "totalSkills": 29,
+    "totalAgents": 26,
+    "totalSkills": 31,
     "totalCommands": 8,
     "agentsByCategory": {
       "design": 3,
       "review": 6,
       "methodology": 5,
+      "other": 1,
       "web": 5,
       "planning": 3,
       "testing": 3
     },
     "skillsByCategory": {
       "meta": 4,
+      "other": 2,
       "web": 8,
       "planning": 2,
       "methodology": 6,
@@ -649,10 +681,12 @@
       "testing": 1
     },
     "skillsByOrigin": {
-      "ECC": 14,
+      "ECC": 15,
+      "ai-hub": 1,
       "superpowers": 12,
-      "curated": 2,
-      "reflect": 1
+      "browser-use": 1,
+      "reflect": 1,
+      "curated": 1
     }
   }
 }

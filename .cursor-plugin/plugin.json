@@ -20,6 +20,10 @@
       "description": "Design-first exploration before implementation. Explores user intent, requirements, and design through collaborative dialogue before any code is written."
     },
     {
+      "name": "browser-automator",
+      "description": "AI-driven browser automation agent using browser-use. Navigates, scrapes, fills forms, tests web apps, and extracts data autonomously with domain restriction and sensitive data handling."
+    },
+    {
       "name": "build-error-resolver",
       "description": "Build and TypeScript error resolution specialist. Fixes build/type errors with minimal diffs. No architectural changes. Gets the build green quickly."
     },
@@ -114,6 +118,10 @@
       "description": "Use when comparing AI agents or coding tools against each other, measuring pass rates, cost, and consistency across standardized tasks."
     },
     {
+      "name": "ai-coding-agents",
+      "description": "Use when choosing, configuring, or integrating AI coding agents (Aider, Cline, Continue, OpenHands, Roo Code, Plandex, Goose, Tabby, Void, SWE-agent, or alternatives like free-claude-code). Covers terminal agents, IDE extensions, autonomous agents, and self-hosted solutions."
+    },
+    {
       "name": "api-design",
       "description": "Use when designing new REST APIs, creating endpoints, or defining response formats and pagination strategies."
     },
@@ -128,6 +136,10 @@
     {
       "name": "brainstorming",
       "description": "Use before any creative work — creating features, building components, adding functionality, or modifying behavior. Explores user intent, requirements, and design before implementation."
+    },
+    {
+      "name": "browser-use",
+      "description": "Use when automating web browsers with AI agents — scraping, form filling, testing, data extraction, multi-step web workflows, or any task requiring browser interaction via browser-use (Python)."
     },
     {
       "name": "codebase-onboarding",
@@ -155,7 +167,7 @@
     },
     {
       "name": "frontend-design-direction",
-      "description": "Establish UI/UX design direction for a project — colors, typography, spacing, and component patterns"
+      "description": "Use when starting a new UI project, page, or component that needs visual direction before implementation. Establishes design purpose, audience, tone, and constraints."
     },
     {
       "name": "frontend-patterns",

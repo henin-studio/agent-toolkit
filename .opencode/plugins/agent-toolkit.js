@@ -6,6 +6,7 @@ const agents = [
   "accessibility",
   "architect",
   "brainstorming",
+  "browser-automator",
   "build-error-resolver",
   "code-reviewer",
   "database-reviewer",
@@ -31,10 +32,12 @@ const agents = [
 ];
 const skills = [
   "agent-eval",
+  "ai-coding-agents",
   "api-design",
   "architecture-decision-records",
   "backend-patterns",
   "brainstorming",
+  "browser-use",
   "codebase-onboarding",
   "context-budget",
   "continuous-learning-v2",
