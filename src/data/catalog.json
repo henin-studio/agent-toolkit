@@ -1,0 +1,658 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-06-18T12:11:54.083Z",
+  "agents": [
+    {
+      "name": "accessibility",
+      "description": "Accessibility specialist focused on WCAG 2.1 compliance, assistive technology compatibility, and inclusive design",
+      "tools": [
+        "Read",
+        "Grep",
+        "Glob",
+        "Write",
+        "Edit"
+      ],
+      "model": "sonnet",
+      "effort": "high",
+      "file": ".claude/agents/accessibility.md",
+      "category": "design"
+    },
+    {
+      "name": "architect",
+      "description": "Strategic architecture advisor for system design decisions, scalability, and technical trade-offs. Read-only analysis with ADR support.",
+      "tools": [
+        "Read",
+        "Grep",
+        "Glob"
+      ],
+      "model": "opus",
+      "effort": "high",
+      "file": ".claude/agents/architect.md",
+      "category": "review"
+    },
+    {
+      "name": "brainstorming",
+      "description": "Design-first exploration before implementation. Explores user intent, requirements, and design through collaborative dialogue before any code is written.",
+      "tools": [
+        "Read",
+        "Grep",
+        "Glob"
+      ],
+      "model": "sonnet",
+      "effort": "high",
+      "file": ".claude/agents/brainstorming.md",
+      "category": "methodology"
+    },
+    {
+      "name": "build-error-resolver",
+      "description": "Build and TypeScript error resolution specialist. Fixes build/type errors with minimal diffs. No architectural changes. Gets the build green quickly.",
+      "tools": [
+        "Read",
+        "Write",
+        "Edit",
+        "Bash",
+        "Grep",
+        "Glob"
+      ],
+      "model": "sonnet",
+      "effort": "medium",
+      "file": ".claude/agents/build-error-resolver.md",
+      "category": "review"
+    },
+    {
+      "name": "code-reviewer",
+      "description": "Expert code review with severity-rated feedback, logic defect detection, SOLID checks, and security focus. Use after writing or modifying code.",
+      "tools": [
+        "Read",
+        "Grep",
+        "Glob",
+        "Bash"
+      ],
+      "model": "sonnet",
+      "effort": "high",
+      "file": ".claude/agents/code-reviewer.md",
+      "category": "review"
+    },
+    {
+      "name": "database-reviewer",
+      "description": "Database/SQL review specialist for query optimization, schema design, security, and performance. Covers PostgreSQL patterns, migrations, and RLS.",
+      "tools": [
+        "Read",
+        "Write",
+        "Edit",
+        "Bash",
+        "Grep",
+        "Glob"
+      ],
+      "model": "sonnet",
+      "effort": "medium",
+      "file": ".claude/agents/database-reviewer.md",
+      "category": "web"
+    },
+    {
+      "name": "doc-updater",
+      "description": "Documentation and codemap specialist. Updates codemaps, READMEs, and guides to match the current state of the codebase.",
+      "tools": [
+        "Read",
+        "Write",
+        "Edit",
+        "Bash",
+        "Grep",
+        "Glob"
+      ],
+      "model": "haiku",
+      "effort": "medium",
+      "file": ".claude/agents/doc-updater.md",
+      "category": "planning"
+    },
+    {
+      "name": "e2e-runner",
+      "description": "End-to-end testing specialist using Playwright. Generates, maintains, and runs E2E tests. Manages test journeys, quarantines flaky tests, and ensures critical user flows work.",
+      "tools": [
+        "Read",
+        "Write",
+        "Edit",
+        "Bash",
+        "Grep",
+        "Glob"
+      ],
+      "model": "sonnet",
+      "effort": "high",
+      "file": ".claude/agents/e2e-runner.md",
+      "category": "testing"
+    },
+    {
+      "name": "explorer",
+      "description": "Codebase exploration specialist that traces execution paths, maps architecture layers, and documents dependencies to inform new development.",
+      "tools": [
+        "Read",
+        "Grep",
+        "Glob"
+      ],
+      "model": "sonnet",
+      "effort": "medium",
+      "file": ".claude/agents/explorer.md",
+      "category": "planning"
+    },
+    {
+      "name": "fastapi-reviewer",
+      "description": "Reviews FastAPI applications for async correctness, dependency injection, Pydantic schemas, security, OpenAPI quality, and production readiness.",
+      "tools": [
+        "Read",
+        "Grep",
+        "Glob",
+        "Bash"
+      ],
+      "model": "sonnet",
+      "effort": "medium",
+      "file": ".claude/agents/fastapi-reviewer.md",
+      "category": "web"
+    },
+    {
+      "name": "loop-operator",
+      "description": "Operates autonomous agent loops, monitors progress, and intervenes safely when loops stall. Manages quality gates, eval baselines, and rollback paths.",
+      "tools": [
+        "Read",
+        "Grep",
+        "Glob",
+        "Bash",
+        "Edit"
+      ],
+      "model": "sonnet",
+      "effort": "high",
+      "file": ".claude/agents/loop-operator.md",
+      "category": "testing"
+    },
+    {
+      "name": "performance-optimizer",
+      "description": "Performance analysis and optimization specialist. Identifies bottlenecks, optimizes slow code, reduces bundle sizes, and improves runtime performance.",
+      "tools": [
+        "Read",
+        "Write",
+        "Edit",
+        "Bash",
+        "Grep",
+        "Glob"
+      ],
+      "model": "sonnet",
+      "effort": "high",
+      "file": ".claude/agents/performance-optimizer.md",
+      "category": "testing"
+    },
+    {
+      "name": "planner",
+      "description": "Expert planning specialist for complex features and refactoring. Creates detailed, actionable implementation plans with exact file paths and step-by-step instructions.",
+      "tools": [
+        "Read",
+        "Grep",
+        "Glob"
+      ],
+      "model": "opus",
+      "effort": "high",
+      "file": ".claude/agents/planner.md",
+      "category": "planning"
+    },
+    {
+      "name": "python-reviewer",
+      "description": "Expert Python code reviewer specializing in PEP 8, Pythonic idioms, type hints, security, and performance. Use for all Python code changes.",
+      "tools": [
+        "Read",
+        "Grep",
+        "Glob",
+        "Bash"
+      ],
+      "model": "sonnet",
+      "effort": "medium",
+      "file": ".claude/agents/python-reviewer.md",
+      "category": "web"
+    },
+    {
+      "name": "react-reviewer",
+      "description": "Expert React/Next.js code reviewer specializing in hook correctness, render performance, server/client boundaries, accessibility, and React-specific security.",
+      "tools": [
+        "Read",
+        "Grep",
+        "Glob",
+        "Bash"
+      ],
+      "model": "sonnet",
+      "effort": "high",
+      "file": ".claude/agents/react-reviewer.md",
+      "category": "web"
+    },
+    {
+      "name": "refactor-cleaner",
+      "description": "Dead code cleanup and consolidation specialist. Removes unused code, duplicates, and refactors safely using analysis tools (knip, depcheck, ts-prune).",
+      "tools": [
+        "Read",
+        "Write",
+        "Edit",
+        "Bash",
+        "Grep",
+        "Glob"
+      ],
+      "model": "sonnet",
+      "effort": "medium",
+      "file": ".claude/agents/refactor-cleaner.md",
+      "category": "review"
+    },
+    {
+      "name": "security-reviewer",
+      "description": "Security vulnerability detection and remediation. Flags secrets, SSRF, injection, unsafe crypto, and OWASP Top 10. Use after writing code handling user input, auth, API endpoints, or sensitive data.",
+      "tools": [
+        "Read",
+        "Write",
+        "Edit",
+        "Bash",
+        "Grep",
+        "Glob"
+      ],
+      "model": "sonnet",
+      "effort": "high",
+      "file": ".claude/agents/security-reviewer.md",
+      "category": "review"
+    },
+    {
+      "name": "senior-fullstack",
+      "description": "Senior full-stack web developer with expertise in W3C, WCAG, OWASP, and modern web frameworks",
+      "tools": [
+        "Read",
+        "Grep",
+        "Glob",
+        "Write",
+        "Edit",
+        "Bash",
+        "TodoWrite"
+      ],
+      "model": "sonnet",
+      "effort": "high",
+      "file": ".claude/agents/senior-fullstack.md",
+      "category": "design"
+    },
+    {
+      "name": "senior-ux",
+      "description": "Senior UX expert specializing in user experience research, interaction design, and accessibility",
+      "tools": [
+        "Read",
+        "Grep",
+        "Glob",
+        "Write",
+        "Edit"
+      ],
+      "model": "sonnet",
+      "effort": "high",
+      "file": ".claude/agents/senior-ux.md",
+      "category": "design"
+    },
+    {
+      "name": "subagent-driven-dev",
+      "description": "Execute implementation plans by dispatching focused subagents per task with two-stage review (spec compliance then code quality).",
+      "tools": [
+        "Read",
+        "Write",
+        "Edit",
+        "Bash",
+        "Grep",
+        "Glob",
+        "TodoWrite"
+      ],
+      "model": "sonnet",
+      "effort": "high",
+      "file": ".claude/agents/subagent-driven-dev.md",
+      "category": "methodology"
+    },
+    {
+      "name": "systematic-debugging",
+      "description": "Structured root-cause analysis for bugs, test failures, and unexpected behavior. ALWAYS find root cause before attempting fixes.",
+      "tools": [
+        "Read",
+        "Grep",
+        "Glob",
+        "Bash"
+      ],
+      "model": "sonnet",
+      "effort": "high",
+      "file": ".claude/agents/systematic-debugging.md",
+      "category": "methodology"
+    },
+    {
+      "name": "tdd-guide",
+      "description": "Test-Driven Development specialist enforcing write-tests-first methodology. Use proactively when writing new features, fixing bugs, or refactoring. Ensures 80%+ test coverage.",
+      "tools": [
+        "Read",
+        "Write",
+        "Edit",
+        "Bash",
+        "Grep"
+      ],
+      "model": "sonnet",
+      "effort": "high",
+      "file": ".claude/agents/tdd-guide.md",
+      "category": "review"
+    },
+    {
+      "name": "typescript-reviewer",
+      "description": "Expert TypeScript/JavaScript code reviewer specializing in type safety, async correctness, and idiomatic patterns. Use for all TS/JS code changes.",
+      "tools": [
+        "Read",
+        "Grep",
+        "Glob",
+        "Bash"
+      ],
+      "model": "sonnet",
+      "effort": "high",
+      "file": ".claude/agents/typescript-reviewer.md",
+      "category": "web"
+    },
+    {
+      "name": "verification-before-completion",
+      "description": "Final quality gate before claiming work is complete. Requires running verification commands and confirming output before making any success claims. Evidence before assertions, always.",
+      "tools": [
+        "Read",
+        "Grep",
+        "Glob",
+        "Bash"
+      ],
+      "model": "sonnet",
+      "effort": "medium",
+      "file": ".claude/agents/verification-before-completion.md",
+      "category": "methodology"
+    },
+    {
+      "name": "writing-plans",
+      "description": "Creates comprehensive implementation plans with exact file paths, code, and commands. Use after design approval, before touching code.",
+      "tools": [
+        "Read",
+        "Grep",
+        "Glob"
+      ],
+      "model": "opus",
+      "effort": "high",
+      "file": ".claude/agents/writing-plans.md",
+      "category": "methodology"
+    }
+  ],
+  "skills": [
+    {
+      "name": "agent-eval",
+      "description": "Use when comparing AI agents or coding tools against each other, measuring pass rates, cost, and consistency across standardized tasks.",
+      "origin": "ECC",
+      "file": ".claude/skills/agent-eval/SKILL.md",
+      "category": "meta"
+    },
+    {
+      "name": "api-design",
+      "description": "Use when designing new REST APIs, creating endpoints, or defining response formats and pagination strategies.",
+      "origin": "ECC",
+      "file": ".claude/skills/api-design/SKILL.md",
+      "category": "web"
+    },
+    {
+      "name": "architecture-decision-records",
+      "description": "Use when making significant architectural choices, selecting technologies, or designing system boundaries that affect future development.",
+      "origin": "ECC",
+      "file": ".claude/skills/architecture-decision-records/SKILL.md",
+      "category": "planning"
+    },
+    {
+      "name": "backend-patterns",
+      "description": "Use when building Node.js APIs, managing database queries, implementing caching, or handling errors in backend services.",
+      "origin": "ECC",
+      "file": ".claude/skills/backend-patterns/SKILL.md",
+      "category": "web"
+    },
+    {
+      "name": "brainstorming",
+      "description": "Use before any creative work — creating features, building components, adding functionality, or modifying behavior. Explores user intent, requirements, and design before implementation.",
+      "origin": "superpowers",
+      "file": ".claude/skills/brainstorming/SKILL.md",
+      "category": "methodology"
+    },
+    {
+      "name": "codebase-onboarding",
+      "description": "Use when starting work on an unfamiliar codebase, joining a new project, or creating onboarding documentation.",
+      "origin": "ECC",
+      "file": ".claude/skills/codebase-onboarding/SKILL.md",
+      "category": "planning"
+    },
+    {
+      "name": "context-budget",
+      "description": "Use when context window is getting full, when agents or skills are consuming too many tokens, or when auditing the efficiency of your Claude Code configuration.",
+      "origin": "ECC",
+      "file": ".claude/skills/context-budget/SKILL.md",
+      "category": "meta"
+    },
+    {
+      "name": "continuous-learning-v2",
+      "description": "Use when you notice patterns in your work that should be captured as project-level or global instincts. Observes corrections, patterns, and preferences to build a self-improving knowledge base.",
+      "origin": "ECC",
+      "file": ".claude/skills/continuous-learning-v2/SKILL.md",
+      "category": "meta"
+    },
+    {
+      "name": "executing-plans",
+      "description": "Use when you have a written implementation plan to execute with review checkpoints.",
+      "origin": "superpowers",
+      "file": ".claude/skills/executing-plans/SKILL.md",
+      "category": "methodology"
+    },
+    {
+      "name": "finishing-a-development-branch",
+      "description": "Use when implementation is complete and all tests pass. Guides merge, PR, or cleanup decisions.",
+      "origin": "superpowers",
+      "file": ".claude/skills/finishing-a-development-branch/SKILL.md",
+      "category": "workflow"
+    },
+    {
+      "name": "frontend-a11y",
+      "description": "Use when building interactive UI components, forms, or navigation to ensure keyboard accessibility, screen reader support, and ARIA compliance.",
+      "origin": "ECC",
+      "file": ".claude/skills/frontend-a11y/SKILL.md",
+      "category": "web"
+    },
+    {
+      "name": "frontend-design-direction",
+      "description": "Establish UI/UX design direction for a project — colors, typography, spacing, and component patterns",
+      "origin": "curated",
+      "file": ".claude/skills/frontend-design-direction/SKILL.md",
+      "category": "web"
+    },
+    {
+      "name": "frontend-patterns",
+      "description": "Use when building React/Next.js components, managing state, handling forms, or optimizing frontend performance.",
+      "origin": "ECC",
+      "file": ".claude/skills/frontend-patterns/SKILL.md",
+      "category": "web"
+    },
+    {
+      "name": "react-patterns",
+      "description": "Best practices and patterns for React 19 and Next.js 15+ development",
+      "origin": "ECC",
+      "file": ".claude/skills/react-patterns/SKILL.md",
+      "category": "web"
+    },
+    {
+      "name": "react-performance",
+      "description": "Use when optimizing React rendering, reducing bundle size, improving data fetching, or diagnosing slow React applications.",
+      "origin": "ECC",
+      "file": ".claude/skills/react-performance/SKILL.md",
+      "category": "web"
+    },
+    {
+      "name": "react-testing",
+      "description": "Testing patterns for React components and Next.js applications",
+      "origin": "ECC",
+      "file": ".claude/skills/react-testing/SKILL.md",
+      "category": "web"
+    },
+    {
+      "name": "receiving-code-review",
+      "description": "Use when receiving code review feedback, before implementing suggestions. Requires technical rigor and verification, not performative agreement.",
+      "origin": "superpowers",
+      "file": ".claude/skills/receiving-code-review/SKILL.md",
+      "category": "workflow"
+    },
+    {
+      "name": "reflect",
+      "description": "Use when users provide corrections, express preferences, or when patterns emerge from successful approaches. Analyzes conversations to extract learnings and propose skill improvements.",
+      "origin": "reflect",
+      "file": ".claude/skills/reflect/SKILL.md",
+      "category": "meta"
+    },
+    {
+      "name": "requesting-code-review",
+      "description": "Use when completing tasks, implementing major features, or before merging, to verify work meets requirements.",
+      "origin": "superpowers",
+      "file": ".claude/skills/requesting-code-review/SKILL.md",
+      "category": "workflow"
+    },
+    {
+      "name": "security-review",
+      "description": "Use before deploying web applications, after adding authentication/authorization, when handling user input, or when setting up API endpoints.",
+      "origin": "ECC",
+      "file": ".claude/skills/security-review/SKILL.md",
+      "category": "security"
+    },
+    {
+      "name": "subagent-driven-development",
+      "description": "Use when executing implementation plans with independent tasks. Dispatches fresh subagent per task with two-stage review.",
+      "origin": "superpowers",
+      "file": ".claude/skills/subagent-driven-development/SKILL.md",
+      "category": "methodology"
+    },
+    {
+      "name": "systematic-debugging",
+      "description": "Four-phase root cause analysis for complex bugs — trace, isolate, verify, fix",
+      "origin": "superpowers",
+      "file": ".claude/skills/systematic-debugging/SKILL.md",
+      "category": "methodology"
+    },
+    {
+      "name": "tdd-workflow",
+      "description": "Use when writing new features, fixing bugs, or refactoring in a web project. Enforces TDD with 80%+ coverage and git checkpoints.",
+      "origin": "ECC",
+      "file": ".claude/skills/tdd-workflow/SKILL.md",
+      "category": "testing"
+    },
+    {
+      "name": "test-driven-development",
+      "description": "Use when implementing any feature or bugfix, before writing implementation code. Enforces RED-GREEN-REFACTOR cycle.",
+      "origin": "superpowers",
+      "file": ".claude/skills/test-driven-development/SKILL.md",
+      "category": "methodology"
+    },
+    {
+      "name": "using-git-worktrees",
+      "description": "Use when starting feature work that needs isolation from the current workspace, or before executing implementation plans.",
+      "origin": "superpowers",
+      "file": ".claude/skills/using-git-worktrees/SKILL.md",
+      "category": "workflow"
+    },
+    {
+      "name": "verification-before-completion",
+      "description": "Use when about to claim work is complete, fixed, or passing, before committing or creating PRs. Requires running verification commands before making success claims.",
+      "origin": "superpowers",
+      "file": ".claude/skills/verification-before-completion/SKILL.md",
+      "category": "workflow"
+    },
+    {
+      "name": "web-security-essentials",
+      "description": "Use when building web applications, setting up authentication, handling user input, configuring headers, or deploying to production. Covers OWASP Top 10 essentials for web developers.",
+      "origin": "curated",
+      "file": ".claude/skills/web-security-essentials/SKILL.md",
+      "category": "security"
+    },
+    {
+      "name": "writing-plans",
+      "description": "Use when you have a spec or requirements for a multi-step task, before touching code.",
+      "origin": "superpowers",
+      "file": ".claude/skills/writing-plans/SKILL.md",
+      "category": "methodology"
+    },
+    {
+      "name": "writing-skills",
+      "description": "Use when creating new skills, editing existing skills, or verifying skills work before deployment.",
+      "origin": "superpowers",
+      "file": ".claude/skills/writing-skills/SKILL.md",
+      "category": "workflow"
+    }
+  ],
+  "commands": [
+    {
+      "name": "build-fix",
+      "description": "Diagnose and fix build/type errors",
+      "argumentHint": "[error-message-or-file]",
+      "file": ".claude/commands/build-fix.md"
+    },
+    {
+      "name": "code-review",
+      "description": "Run a comprehensive code review on recent changes",
+      "argumentHint": "[file-or-directory]",
+      "file": ".claude/commands/code-review.md"
+    },
+    {
+      "name": "learn",
+      "description": "Continuous learning from feedback patterns",
+      "argumentHint": "",
+      "file": ".claude/commands/learn.md"
+    },
+    {
+      "name": "plan",
+      "description": "Create an implementation plan for a task",
+      "argumentHint": "[task-description]",
+      "file": ".claude/commands/plan.md"
+    },
+    {
+      "name": "quality-gate",
+      "description": "Run quality checks before committing",
+      "argumentHint": "",
+      "file": ".claude/commands/quality-gate.md"
+    },
+    {
+      "name": "reflect",
+      "description": "Extract learnings from the current session",
+      "argumentHint": "",
+      "file": ".claude/commands/reflect.md"
+    },
+    {
+      "name": "security-scan",
+      "description": "Quick security scan for common vulnerabilities",
+      "argumentHint": "[file-or-directory]",
+      "file": ".claude/commands/security-scan.md"
+    },
+    {
+      "name": "tdd",
+      "description": "Start a TDD workflow (RED-GREEN-REFACTOR)",
+      "argumentHint": "[feature-description]",
+      "file": ".claude/commands/tdd.md"
+    }
+  ],
+  "stats": {
+    "totalAgents": 25,
+    "totalSkills": 29,
+    "totalCommands": 8,
+    "agentsByCategory": {
+      "design": 3,
+      "review": 6,
+      "methodology": 5,
+      "web": 5,
+      "planning": 3,
+      "testing": 3
+    },
+    "skillsByCategory": {
+      "meta": 4,
+      "web": 8,
+      "planning": 2,
+      "methodology": 6,
+      "workflow": 6,
+      "security": 2,
+      "testing": 1
+    },
+    "skillsByOrigin": {
+      "ECC": 14,
+      "superpowers": 12,
+      "curated": 2,
+      "reflect": 1
+    }
+  }
+}

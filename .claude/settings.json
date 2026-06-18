@@ -1,0 +1,56 @@
+{
+  "project": {
+    "name": "agent-toolkit",
+    "version": "1.0.0"
+  },
+  "allowedTools": [
+    "Read",
+    "Write",
+    "Edit",
+    "Bash",
+    "LS",
+    "Glob",
+    "Grep",
+    "TodoRead",
+    "TodoWrite",
+    "WebFetch",
+    "WebSearch"
+  ],
+  "hooks": {
+    "configPath": ".claude/hooks/hooks.json"
+  },
+  "permissions": {
+    "allow": [
+      "npm run *",
+      "npx *",
+      "node scripts/*",
+      "python3 scripts/*",
+      "git status",
+      "git diff *",
+      "git log *",
+      "git add *",
+      "git commit *",
+      "git checkout *",
+      "git branch *",
+      "ls *",
+      "cat *",
+      "head *",
+      "tail *",
+      "find *",
+      "wc *",
+      "mkdir *"
+    ],
+    "deny": [
+      "rm -rf /",
+      "rm -rf ~",
+      "git push --force origin main",
+      "git push --force origin master",
+      "drop database *",
+      "DROP DATABASE *",
+      "curl * | bash",
+      "wget * | bash",
+      "chmod -R 777 /",
+      "dd if=* of=/dev/*"
+    ]
+  }
+}

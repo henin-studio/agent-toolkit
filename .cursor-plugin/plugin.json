@@ -1,0 +1,263 @@
+{
+  "name": "agent-toolkit",
+  "version": "1.0.0",
+  "description": "Curated agents, skills, and hooks for web development",
+  "instructions_path": "../AGENTS.md",
+  "agents_path": "../.claude/agents",
+  "skills_path": "../.claude/skills",
+  "commands_path": "../.claude/commands",
+  "agents": [
+    {
+      "name": "accessibility",
+      "description": "Accessibility specialist focused on WCAG 2.1 compliance, assistive technology compatibility, and inclusive design"
+    },
+    {
+      "name": "architect",
+      "description": "Strategic architecture advisor for system design decisions, scalability, and technical trade-offs. Read-only analysis with ADR support."
+    },
+    {
+      "name": "brainstorming",
+      "description": "Design-first exploration before implementation. Explores user intent, requirements, and design through collaborative dialogue before any code is written."
+    },
+    {
+      "name": "build-error-resolver",
+      "description": "Build and TypeScript error resolution specialist. Fixes build/type errors with minimal diffs. No architectural changes. Gets the build green quickly."
+    },
+    {
+      "name": "code-reviewer",
+      "description": "Expert code review with severity-rated feedback, logic defect detection, SOLID checks, and security focus. Use after writing or modifying code."
+    },
+    {
+      "name": "database-reviewer",
+      "description": "Database/SQL review specialist for query optimization, schema design, security, and performance. Covers PostgreSQL patterns, migrations, and RLS."
+    },
+    {
+      "name": "doc-updater",
+      "description": "Documentation and codemap specialist. Updates codemaps, READMEs, and guides to match the current state of the codebase."
+    },
+    {
+      "name": "e2e-runner",
+      "description": "End-to-end testing specialist using Playwright. Generates, maintains, and runs E2E tests. Manages test journeys, quarantines flaky tests, and ensures critical user flows work."
+    },
+    {
+      "name": "explorer",
+      "description": "Codebase exploration specialist that traces execution paths, maps architecture layers, and documents dependencies to inform new development."
+    },
+    {
+      "name": "fastapi-reviewer",
+      "description": "Reviews FastAPI applications for async correctness, dependency injection, Pydantic schemas, security, OpenAPI quality, and production readiness."
+    },
+    {
+      "name": "loop-operator",
+      "description": "Operates autonomous agent loops, monitors progress, and intervenes safely when loops stall. Manages quality gates, eval baselines, and rollback paths."
+    },
+    {
+      "name": "performance-optimizer",
+      "description": "Performance analysis and optimization specialist. Identifies bottlenecks, optimizes slow code, reduces bundle sizes, and improves runtime performance."
+    },
+    {
+      "name": "planner",
+      "description": "Expert planning specialist for complex features and refactoring. Creates detailed, actionable implementation plans with exact file paths and step-by-step instructions."
+    },
+    {
+      "name": "python-reviewer",
+      "description": "Expert Python code reviewer specializing in PEP 8, Pythonic idioms, type hints, security, and performance. Use for all Python code changes."
+    },
+    {
+      "name": "react-reviewer",
+      "description": "Expert React/Next.js code reviewer specializing in hook correctness, render performance, server/client boundaries, accessibility, and React-specific security."
+    },
+    {
+      "name": "refactor-cleaner",
+      "description": "Dead code cleanup and consolidation specialist. Removes unused code, duplicates, and refactors safely using analysis tools (knip, depcheck, ts-prune)."
+    },
+    {
+      "name": "security-reviewer",
+      "description": "Security vulnerability detection and remediation. Flags secrets, SSRF, injection, unsafe crypto, and OWASP Top 10. Use after writing code handling user input, auth, API endpoints, or sensitive data."
+    },
+    {
+      "name": "senior-fullstack",
+      "description": "Senior full-stack web developer with expertise in W3C, WCAG, OWASP, and modern web frameworks"
+    },
+    {
+      "name": "senior-ux",
+      "description": "Senior UX expert specializing in user experience research, interaction design, and accessibility"
+    },
+    {
+      "name": "subagent-driven-dev",
+      "description": "Execute implementation plans by dispatching focused subagents per task with two-stage review (spec compliance then code quality)."
+    },
+    {
+      "name": "systematic-debugging",
+      "description": "Structured root-cause analysis for bugs, test failures, and unexpected behavior. ALWAYS find root cause before attempting fixes."
+    },
+    {
+      "name": "tdd-guide",
+      "description": "Test-Driven Development specialist enforcing write-tests-first methodology. Use proactively when writing new features, fixing bugs, or refactoring. Ensures 80%+ test coverage."
+    },
+    {
+      "name": "typescript-reviewer",
+      "description": "Expert TypeScript/JavaScript code reviewer specializing in type safety, async correctness, and idiomatic patterns. Use for all TS/JS code changes."
+    },
+    {
+      "name": "verification-before-completion",
+      "description": "Final quality gate before claiming work is complete. Requires running verification commands and confirming output before making any success claims. Evidence before assertions, always."
+    },
+    {
+      "name": "writing-plans",
+      "description": "Creates comprehensive implementation plans with exact file paths, code, and commands. Use after design approval, before touching code."
+    }
+  ],
+  "skills": [
+    {
+      "name": "agent-eval",
+      "description": "Use when comparing AI agents or coding tools against each other, measuring pass rates, cost, and consistency across standardized tasks."
+    },
+    {
+      "name": "api-design",
+      "description": "Use when designing new REST APIs, creating endpoints, or defining response formats and pagination strategies."
+    },
+    {
+      "name": "architecture-decision-records",
+      "description": "Use when making significant architectural choices, selecting technologies, or designing system boundaries that affect future development."
+    },
+    {
+      "name": "backend-patterns",
+      "description": "Use when building Node.js APIs, managing database queries, implementing caching, or handling errors in backend services."
+    },
+    {
+      "name": "brainstorming",
+      "description": "Use before any creative work — creating features, building components, adding functionality, or modifying behavior. Explores user intent, requirements, and design before implementation."
+    },
+    {
+      "name": "codebase-onboarding",
+      "description": "Use when starting work on an unfamiliar codebase, joining a new project, or creating onboarding documentation."
+    },
+    {
+      "name": "context-budget",
+      "description": "Use when context window is getting full, when agents or skills are consuming too many tokens, or when auditing the efficiency of your Claude Code configuration."
+    },
+    {
+      "name": "continuous-learning-v2",
+      "description": "Use when you notice patterns in your work that should be captured as project-level or global instincts. Observes corrections, patterns, and preferences to build a self-improving knowledge base."
+    },
+    {
+      "name": "executing-plans",
+      "description": "Use when you have a written implementation plan to execute with review checkpoints."
+    },
+    {
+      "name": "finishing-a-development-branch",
+      "description": "Use when implementation is complete and all tests pass. Guides merge, PR, or cleanup decisions."
+    },
+    {
+      "name": "frontend-a11y",
+      "description": "Use when building interactive UI components, forms, or navigation to ensure keyboard accessibility, screen reader support, and ARIA compliance."
+    },
+    {
+      "name": "frontend-design-direction",
+      "description": "Establish UI/UX design direction for a project — colors, typography, spacing, and component patterns"
+    },
+    {
+      "name": "frontend-patterns",
+      "description": "Use when building React/Next.js components, managing state, handling forms, or optimizing frontend performance."
+    },
+    {
+      "name": "react-patterns",
+      "description": "Best practices and patterns for React 19 and Next.js 15+ development"
+    },
+    {
+      "name": "react-performance",
+      "description": "Use when optimizing React rendering, reducing bundle size, improving data fetching, or diagnosing slow React applications."
+    },
+    {
+      "name": "react-testing",
+      "description": "Testing patterns for React components and Next.js applications"
+    },
+    {
+      "name": "receiving-code-review",
+      "description": "Use when receiving code review feedback, before implementing suggestions. Requires technical rigor and verification, not performative agreement."
+    },
+    {
+      "name": "reflect",
+      "description": "Use when users provide corrections, express preferences, or when patterns emerge from successful approaches. Analyzes conversations to extract learnings and propose skill improvements."
+    },
+    {
+      "name": "requesting-code-review",
+      "description": "Use when completing tasks, implementing major features, or before merging, to verify work meets requirements."
+    },
+    {
+      "name": "security-review",
+      "description": "Use before deploying web applications, after adding authentication/authorization, when handling user input, or when setting up API endpoints."
+    },
+    {
+      "name": "subagent-driven-development",
+      "description": "Use when executing implementation plans with independent tasks. Dispatches fresh subagent per task with two-stage review."
+    },
+    {
+      "name": "systematic-debugging",
+      "description": "Four-phase root cause analysis for complex bugs — trace, isolate, verify, fix"
+    },
+    {
+      "name": "tdd-workflow",
+      "description": "Use when writing new features, fixing bugs, or refactoring in a web project. Enforces TDD with 80%+ coverage and git checkpoints."
+    },
+    {
+      "name": "test-driven-development",
+      "description": "Use when implementing any feature or bugfix, before writing implementation code. Enforces RED-GREEN-REFACTOR cycle."
+    },
+    {
+      "name": "using-git-worktrees",
+      "description": "Use when starting feature work that needs isolation from the current workspace, or before executing implementation plans."
+    },
+    {
+      "name": "verification-before-completion",
+      "description": "Use when about to claim work is complete, fixed, or passing, before committing or creating PRs. Requires running verification commands before making success claims."
+    },
+    {
+      "name": "web-security-essentials",
+      "description": "Use when building web applications, setting up authentication, handling user input, configuring headers, or deploying to production. Covers OWASP Top 10 essentials for web developers."
+    },
+    {
+      "name": "writing-plans",
+      "description": "Use when you have a spec or requirements for a multi-step task, before touching code."
+    },
+    {
+      "name": "writing-skills",
+      "description": "Use when creating new skills, editing existing skills, or verifying skills work before deployment."
+    }
+  ],
+  "commands": [
+    {
+      "name": "build-fix",
+      "description": "Diagnose and fix build/type errors"
+    },
+    {
+      "name": "code-review",
+      "description": "Run a comprehensive code review on recent changes"
+    },
+    {
+      "name": "learn",
+      "description": "Continuous learning from feedback patterns"
+    },
+    {
+      "name": "plan",
+      "description": "Create an implementation plan for a task"
+    },
+    {
+      "name": "quality-gate",
+      "description": "Run quality checks before committing"
+    },
+    {
+      "name": "reflect",
+      "description": "Extract learnings from the current session"
+    },
+    {
+      "name": "security-scan",
+      "description": "Quick security scan for common vulnerabilities"
+    },
+    {
+      "name": "tdd",
+      "description": "Start a TDD workflow (RED-GREEN-REFACTOR)"
+    }
+  ]
+}

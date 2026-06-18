@@ -1,0 +1,122 @@
+{
+  "name": "agent-toolkit",
+  "version": "1.0.0",
+  "description": "Curated agents, skills, and hooks for web development — from AI-HUB sources to your project. Provides 13 agents, 29 skills, 8 commands, and 4 session hooks, with multi-platform conversion for Codex, Cursor, Gemini, and OpenCode.",
+  "author": "denis",
+  "repository": "https://github.com/denis/agent-toolkit",
+  "license": "MIT",
+  "agents": [
+    {
+      "name": "architect",
+      "file": ".claude/agents/architect.md",
+      "description": "Strategic architecture advisor for system design decisions, scalability, and technical trade-offs"
+    },
+    {
+      "name": "brainstorming",
+      "file": ".claude/agents/brainstorming.md",
+      "description": "Creative brainstorming partner for exploring ideas and solutions"
+    },
+    {
+      "name": "build-error-resolver",
+      "file": ".claude/agents/build-error-resolver.md",
+      "description": "Specialist in diagnosing and fixing build errors"
+    },
+    {
+      "name": "code-reviewer",
+      "file": ".claude/agents/code-reviewer.md",
+      "description": "Standard code review with focus on web development patterns"
+    },
+    {
+      "name": "doc-updater",
+      "file": ".claude/agents/doc-updater.md",
+      "description": "Documentation updater and maintainer"
+    },
+    {
+      "name": "planner",
+      "file": ".claude/agents/planner.md",
+      "description": "Implementation planner for structured task breakdown"
+    },
+    {
+      "name": "refactor-cleaner",
+      "file": ".claude/agents/refactor-cleaner.md",
+      "description": "Dead code cleanup and refactoring specialist"
+    },
+    {
+      "name": "security-reviewer",
+      "file": ".claude/agents/security-reviewer.md",
+      "description": "Security audit focusing on OWASP, secrets, and dangerous patterns"
+    },
+    {
+      "name": "systematic-debugging",
+      "file": ".claude/agents/systematic-debugging.md",
+      "description": "Systematic debugging methodology agent"
+    },
+    {
+      "name": "tdd-guide",
+      "file": ".claude/agents/tdd-guide.md",
+      "description": "Test-Driven Development workflow enforcement"
+    },
+    {
+      "name": "typescript-reviewer",
+      "file": ".claude/agents/typescript-reviewer.md",
+      "description": "TypeScript-specific code review specialist"
+    },
+    {
+      "name": "verification-before-completion",
+      "file": ".claude/agents/verification-before-completion.md",
+      "description": "Pre-completion verification checklist agent"
+    },
+    {
+      "name": "writing-plans",
+      "file": ".claude/agents/writing-plans.md",
+      "description": "Structured implementation plan writer"
+    }
+  ],
+  "skills": [
+    { "name": "agent-eval", "file": ".claude/skills/agent-eval/SKILL.md" },
+    { "name": "api-design", "file": ".claude/skills/api-design/SKILL.md" },
+    { "name": "architecture-decision-records", "file": ".claude/skills/architecture-decision-records/SKILL.md" },
+    { "name": "backend-patterns", "file": ".claude/skills/backend-patterns/SKILL.md" },
+    { "name": "brainstorming", "file": ".claude/skills/brainstorming/SKILL.md" },
+    { "name": "codebase-onboarding", "file": ".claude/skills/codebase-onboarding/SKILL.md" },
+    { "name": "context-budget", "file": ".claude/skills/context-budget/SKILL.md" },
+    { "name": "continuous-learning-v2", "file": ".claude/skills/continuous-learning-v2/SKILL.md" },
+    { "name": "executing-plans", "file": ".claude/skills/executing-plans/SKILL.md" },
+    { "name": "finishing-a-development-branch", "file": ".claude/skills/finishing-a-development-branch/SKILL.md" },
+    { "name": "frontend-a11y", "file": ".claude/skills/frontend-a11y/SKILL.md" },
+    { "name": "frontend-design-direction", "file": ".claude/skills/frontend-design-direction/SKILL.md" },
+    { "name": "frontend-patterns", "file": ".claude/skills/frontend-patterns/SKILL.md" },
+    { "name": "react-patterns", "file": ".claude/skills/react-patterns/SKILL.md" },
+    { "name": "react-performance", "file": ".claude/skills/react-performance/SKILL.md" },
+    { "name": "react-testing", "file": ".claude/skills/react-testing/SKILL.md" },
+    { "name": "receiving-code-review", "file": ".claude/skills/receiving-code-review/SKILL.md" },
+    { "name": "reflect", "file": ".claude/skills/reflect/SKILL.md" },
+    { "name": "requesting-code-review", "file": ".claude/skills/requesting-code-review/SKILL.md" },
+    { "name": "security-review", "file": ".claude/skills/security-review/SKILL.md" },
+    { "name": "subagent-driven-development", "file": ".claude/skills/subagent-driven-development/SKILL.md" },
+    { "name": "systematic-debugging", "file": ".claude/skills/systematic-debugging/SKILL.md" },
+    { "name": "tdd-workflow", "file": ".claude/skills/tdd-workflow/SKILL.md" },
+    { "name": "test-driven-development", "file": ".claude/skills/test-driven-development/SKILL.md" },
+    { "name": "using-git-worktrees", "file": ".claude/skills/using-git-worktrees/SKILL.md" },
+    { "name": "verification-before-completion", "file": ".claude/skills/verification-before-completion/SKILL.md" },
+    { "name": "web-security-essentials", "file": ".claude/skills/web-security-essentials/SKILL.md" },
+    { "name": "writing-plans", "file": ".claude/skills/writing-plans/SKILL.md" },
+    { "name": "writing-skills", "file": ".claude/skills/writing-skills/SKILL.md" }
+  ],
+  "commands": [
+    { "name": "build-fix", "file": ".claude/commands/build-fix.md", "description": "Fix build errors systematically" },
+    { "name": "code-review", "file": ".claude/commands/code-review.md", "description": "Run a comprehensive code review" },
+    { "name": "learn", "file": ".claude/commands/learn.md", "description": "Learn from the current session" },
+    { "name": "plan", "file": ".claude/commands/plan.md", "description": "Create an implementation plan for a task" },
+    { "name": "quality-gate", "file": ".claude/commands/quality-gate.md", "description": "Run quality checks before merging" },
+    { "name": "reflect", "file": ".claude/commands/reflect.md", "description": "Reflect on recent work and extract learnings" },
+    { "name": "security-scan", "file": ".claude/commands/security-scan.md", "description": "Run a security scan on the codebase" },
+    { "name": "tdd", "file": ".claude/commands/tdd.md", "description": "Start a TDD workflow" }
+  ],
+  "hooks": {
+    "configPath": ".claude/hooks/hooks.json"
+  },
+  "settings": {
+    "configPath": ".claude/settings.json"
+  }
+}
