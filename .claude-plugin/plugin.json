@@ -1,6 +1,6 @@
 {
   "name": "agent-toolkit",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Curated agents, skills, and hooks for web development — from AI-HUB sources to your project. Provides 13 agents, 29 skills, 8 commands, and 4 session hooks, with multi-platform conversion for Codex, Cursor, Gemini, and OpenCode.",
   "author": "denis",
   "repository": "https://github.com/denis/agent-toolkit",

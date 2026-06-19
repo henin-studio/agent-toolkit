@@ -1,6 +1,6 @@
 {
   "version": "1.1.0",
-  "generatedAt": "2026-06-19T00:00:52.727Z",
+  "generatedAt": "2026-06-19T21:05:17.278Z",
   "agents": [
     {
       "name": "accessibility",
@@ -460,6 +460,13 @@
       "category": "meta"
     },
     {
+      "name": "deep-paper-note",
+      "description": "Use when deep-reading an academic paper and generating structured Obsidian-style research notes. Handles paper identity resolution, metadata extraction, figure/table placement, mechanism breakdown, and evidence-based analysis.",
+      "origin": "DeepPaperNote",
+      "file": ".claude/skills/deep-paper-note/SKILL.md",
+      "category": "other"
+    },
+    {
       "name": "executing-plans",
       "description": "Use when you have a written implementation plan to execute with review checkpoints.",
       "origin": "superpowers",
@@ -493,6 +500,13 @@
       "origin": "ECC",
       "file": ".claude/skills/frontend-patterns/SKILL.md",
       "category": "web"
+    },
+    {
+      "name": "ralphex",
+      "description": "Use when autonomously executing implementation plans with Claude Code or Codex. Handles multi-phase code review, git branching, worktree isolation, and plan tracking. Extended Ralph loop for production-grade autonomous coding.",
+      "origin": "ralphex",
+      "file": ".claude/skills/ralphex/SKILL.md",
+      "category": "other"
     },
     {
       "name": "react-patterns",
@@ -586,6 +600,13 @@
       "category": "workflow"
     },
     {
+      "name": "vvveb-js",
+      "description": "Use when building drag-and-drop page builders, WYSIWYG editors, or visual HTML composition tools. VvvebJs is a vanilla JS page builder library with zero dependencies, Bootstrap 5 components, undo/redo, live code editing, and ZIP export.",
+      "origin": "VvvebJs",
+      "file": ".claude/skills/vvveb-js/SKILL.md",
+      "category": "other"
+    },
+    {
       "name": "web-security-essentials",
       "description": "Use when building web applications, setting up authentication, handling user input, configuring headers, or deploying to production. Covers OWASP Top 10 essentials for web developers.",
       "origin": "curated",
@@ -659,7 +680,7 @@
   ],
   "stats": {
     "totalAgents": 26,
-    "totalSkills": 31,
+    "totalSkills": 34,
     "totalCommands": 8,
     "agentsByCategory": {
       "design": 3,
@@ -672,7 +693,7 @@
     },
     "skillsByCategory": {
       "meta": 4,
-      "other": 2,
+      "other": 5,
       "web": 8,
       "planning": 2,
       "methodology": 6,
@@ -685,7 +706,10 @@
       "ai-hub": 1,
       "superpowers": 12,
       "browser-use": 1,
+      "DeepPaperNote": 1,
+      "ralphex": 1,
       "reflect": 1,
+      "VvvebJs": 1,
       "curated": 1
     }
   }

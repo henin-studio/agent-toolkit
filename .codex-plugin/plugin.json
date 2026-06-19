@@ -1,6 +1,6 @@
 {
   "name": "agent-toolkit",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Curated agents, skills, and hooks for web development",
   "instructions_file": "../AGENTS.md",
   "agents": [
@@ -151,6 +151,10 @@
       "description": "Use when you notice patterns in your work that should be captured as project-level or global instincts. Observes corrections, patterns, and preferences to build a self-improving knowledge base."
     },
     {
+      "name": "deep-paper-note",
+      "description": "Use when deep-reading an academic paper and generating structured Obsidian-style research notes. Handles paper identity resolution, metadata extraction, figure/table placement, mechanism breakdown, and evidence-based analysis."
+    },
+    {
       "name": "executing-plans",
       "description": "Use when you have a written implementation plan to execute with review checkpoints."
     },
@@ -169,6 +173,10 @@
     {
       "name": "frontend-patterns",
       "description": "Use when building React/Next.js components, managing state, handling forms, or optimizing frontend performance."
+    },
+    {
+      "name": "ralphex",
+      "description": "Use when autonomously executing implementation plans with Claude Code or Codex. Handles multi-phase code review, git branching, worktree isolation, and plan tracking. Extended Ralph loop for production-grade autonomous coding."
     },
     {
       "name": "react-patterns",
@@ -221,6 +229,10 @@
     {
       "name": "verification-before-completion",
       "description": "Use when about to claim work is complete, fixed, or passing, before committing or creating PRs. Requires running verification commands before making success claims."
+    },
+    {
+      "name": "vvveb-js",
+      "description": "Use when building drag-and-drop page builders, WYSIWYG editors, or visual HTML composition tools. VvvebJs is a vanilla JS page builder library with zero dependencies, Bootstrap 5 components, undo/redo, live code editing, and ZIP export."
     },
     {
       "name": "web-security-essentials",
